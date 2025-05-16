@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <p>Inicio Componente App</p>
+
+  <p>Olá, meu nome é {{title}}</p>
+
+  <ul>
+    <li>
+      <a [routerLink]="['/begin']" routerLinkActive="router-link-active">Inicio</a>
+    </li>
+    <li> 
+      <a [routerLink]="['/lista']" routerLinkActive="router-link-active">Lista</a>
+    </li>
+    <li>
+      <a [routerLink]="['/secondPage']" routerLinkActive="router-link-active">secondPage</a>
+    </li>
+    <li>
+      <a [routerLink]="['/begin/secondPage']" routerLinkActive="router-link-active">Inicio/secondPage</a>
+    </li>
+    <li>
+      <a [routerLink]="['']" routerLinkActive="router-link-active">App</a>
+    </li>
+    <li>
+      <a [routerLink]="['/forms']" routerLinkActive="router-link-active">Forms</a>
+    </li>
+  </ul>
+
+ <!--  <p>Contador {{contador()}}</p>
+
+  <button class="btn btn-primary" (click)="AddContador()">Add</button> -->
+
+  <!-- <app-hello [items]="itemss" (Confirmar)="GerarRelatorio()" /> -->
+
+  <router-outlet />
+  
+  <p>Fim COmponente App</p>
+
+</div>
